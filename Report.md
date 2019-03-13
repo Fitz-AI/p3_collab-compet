@@ -26,7 +26,7 @@ In order to do better exploration, an exploration policy μ’ is constructed by
 In addition, DDPG does soft update on the parameters of both actor and critic, with τ≪1: θ′←τθ+(1−τ)θ′. In this way, the target network values are constrained to change slowly, different from the design in DQN that the target network stays frozen for some period of time.
 
 
-![alt text](https://github.com/Quertier/p3_collab-compet/blob/master/pics/ddpg_algo.jpg)
+![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/ddpg_algo.jpg)
 
 
 ### Algorithm 2
@@ -42,7 +42,7 @@ In summary, MADDPG added three additional ingredients on top of DDPG to make it 
    -Policy ensembling is good for reducing variance.
 
 
-![alt text](https://github.com/Quertier/p3_collab-compet/blob/master/pics/maddpg_algo.jpg)
+![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/maddpg_algo.jpg)
 
 ### Hyper parameters for DDPG
 
@@ -88,7 +88,7 @@ The Critic networks utilised two fully connected layers with 256 and 256 units w
 
 For DDPG, we have :
 
-![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/pics/p3_score.PNG)
+![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/p3_score.PNG)
 
 For MADDPG, we want to have a higher score then we fix a threshold of 2.0. :
 
