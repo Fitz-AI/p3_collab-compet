@@ -18,7 +18,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Algorithm 1
 
-To train the agent, we use the ddpg algorithm form DDPG_continuous_control notebook. 
+To train the agent, we use the DDPG algorithm from Tennis notebook in folder DDPG. 
 DDPG (Lillicrap, et al., 2015), short for Deep Deterministic Policy Gradient, is a model-free off-policy actor-critic algorithm, combining DPG with DQN.The original DQN works in discrete space, and DDPG extends it to continuous space with the actor-critic framework while learning a deterministic policy.
 
 In order to do better exploration, an exploration policy μ’ is constructed by adding noise N :μ′(s)=μθ(s)+N.
@@ -34,7 +34,8 @@ In addition, DDPG does soft update on the parameters of both actor and critic, w
 
 ### Algorithm 2
 
-Multi-agent DDPG (MADDPG) (Lowe et al., 2017)extends DDPG to an environment where multiple agents are coordinating to complete tasks with only local information. In the viewpoint of one agent, the environment is non-stationary as policies of other agents are quickly upgraded and remain unknown. MADDPG is an actor-critic model redesigned particularly for handling such a changing environment and interactions between agents.
+To train the agent, we use the MADDPG algorithm from maddpg_Tennis notebook in folder MADDPG. 
+Multi-agent DDPG (MADDPG) (Lowe et al., 2017) extends DDPG to an environment where multiple agents are coordinating to complete tasks with only local information. In the viewpoint of one agent, the environment is non-stationary as policies of other agents are quickly upgraded and remain unknown. MADDPG is an actor-critic model redesigned particularly for handling such a changing environment and interactions between agents.
 
 In summary, MADDPG added three additional ingredients on top of DDPG to make it adapt to the multi-agent environment:
 
