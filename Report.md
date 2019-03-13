@@ -57,9 +57,7 @@ GAMMA = 0.99
 TAU = 5e-3              
 LR_ACTOR = 1e-3         
 LR_CRITIC = 1e-3        
-WEIGHT_DECAY = 0.0
-EPSILON = 1.0 
-EPSILON_DECAY = 1e-6
+WEIGHT_DECAY = 0
 
 ### Hyper parameters for MADDPG
 
@@ -69,9 +67,7 @@ GAMMA = 0.99
 TAU = 5e-3              
 LR_ACTOR = 1e-3         
 LR_CRITIC = 1e-3        
-WEIGHT_DECAY = 0.0 
-EPSILON = 1.0 
-EPSILON_DECAY = 1e-6
+WEIGHT_DECAY = 0
 
 ### Neural Networks for DDPG
 
