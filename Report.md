@@ -26,7 +26,10 @@ In order to do better exploration, an exploration policy μ’ is constructed by
 In addition, DDPG does soft update on the parameters of both actor and critic, with τ≪1: θ′←τθ+(1−τ)θ′. In this way, the target network values are constrained to change slowly, different from the design in DQN that the target network stays frozen for some period of time.
 
 
-![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/ddpg_algo.jpg)
+### Deep Deterministic Policy Gradients (DDPG)
+
+
+![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/ddpg_algo.PNG)
 
 
 ### Algorithm 2
@@ -40,7 +43,8 @@ In summary, MADDPG added three additional ingredients on top of DDPG to make it 
    -Actors are able to use estimated policies of other agents for learning;
    
    -Policy ensembling is good for reducing variance.
-
+   
+### Multi-Agent Deep Deterministic Policy Gradients (MADDPG)
 
 ![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/maddpg_algo.jpg)
 
@@ -92,7 +96,7 @@ For DDPG, we have :
 
 For MADDPG, we want to have a higher score then we fix a threshold of 2.0. :
 
-![Alt text](https://github.com/Quertier/p2_continuous-control/blob/master/p3_maddpg.PNG)
+![Alt text](https://github.com/Quertier/p3_collab-compet/blob/master/p3_maddpg.PNG)
 
 
 ## Future Improvements
