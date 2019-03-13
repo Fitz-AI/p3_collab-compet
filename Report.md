@@ -38,10 +38,9 @@ Multi-agent DDPG (MADDPG) (Lowe et al., 2017)extends DDPG to an environment wher
 
 In summary, MADDPG added three additional ingredients on top of DDPG to make it adapt to the multi-agent environment:
 
-    Centralized critic + decentralized actors;
-    Actors are able to use estimated policies of other agents for learning;
-    Policy ensembling is good for reducing variance.
-
+   -Centralized critic + decentralized actors;
+   -Actors are able to use estimated policies of other agents for learning;
+   -Policy ensembling is good for reducing variance.
 
 
 ![alt text](https://github.com/Quertier/p3_collab-compet/blob/master/pics/maddpg_algo.jpg)
